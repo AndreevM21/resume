@@ -2,13 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя страница</title>
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="mikhail, cv, 
+    resume">
+    <meta name="description" content="Это мой сайт-
+    резюме Михаила Андреева">
+    <link rel="stylesheet" href="style.css">
+    <title>Mikhails resume</title>
+    <style>
+        body {
+            background: #f5eef4;
+        }
+
+       header{
+        border: 1px solid grey;
+    } 
+    </style>
 </head>
 <body>
+<div class="container">
 
-<img src="photo_2024-05-15_21-23-23.jpg" width="300" alt="здесь фото красвчика">
+    <div class="info">
 
+<img src="photo_2024-05-15_21-23-23.jpg" class="avatar" alt="здесь фото красвчика">
+
+
+<div class="infotext"></div>
  <h1>Михаил Андреев</h1> 
  <hr>
  
@@ -18,19 +38,32 @@
 
  
     <p>Привет! Меня зовут Михаил, я начинающий Web разработчкик. Хочу стать frontend и backend разработчкиком.</p>
-    <p>Я люблю спорт,винцо, смотреть фильмы и открывать что то новое.</p>
+    <p>Я люблю спорт,винцо, смотреть фильмы и открывать что-то новое.</p>
     <hr>
     <h4><em>Список социальных сетей:</em>
 
 
     </h4>
-<a href="PestriyPes" target="_blank">telegram</a>
+ <a href="PestriyPes" target="_blank">Telegram</a>
 |
-<a href="https://vk.com/id658914539" target="_blank">Vk</a>
+ <a href="https://vk.com/id658914539" target="_blank">Vk</a>
 |
 <a href="http://www.youtube.com/@MrGreen-jd2rb" target="_blank">Youtube</a>
+
+    </div>
+    <div class="card bg-green">
+    <h2>Мои хобби</h2>
+
+    <ol class="list">
+        <li>Прогрммирование</li>
+        <li>Футбол</li>
+        <li>Смотреть фильмы</li>
+    </ol>
+    </div>
+
+<div class="card bg-pink">
 <h2>Опыт работы:</h2>
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>Название</th>
@@ -58,31 +91,37 @@
 
     </tbody>
     </table>
+</div>
 
-<h2>Связаться со мной</h2>
-<form action="/">
-    <div>
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+     <div class="form-row">
+
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name"
         placeholder="Введите имя">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email"
         placeholder="Введите email">
     </div>
+</div>
 
-    <div>
+    <div class="form-group">
         <label for="message">Ваше сообщение</label>
-        <br>
         <textarea id="message" cols="20"
         rows="5"placeholder="Введите сообщение..."></textarea>
     </div>
     <div>
-        <input type="submit" value="Отправить!">
+        <input class="btn" type="submit" value="Отправить!">
     </div>
 </form>
 
+</div>
 </body>
 </html>
